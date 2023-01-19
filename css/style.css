@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap');
+/* fonte monserrat */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+/* fonte fraunces */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.tot{
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.principal{
+  height: 90vh;
+  width: 90vw;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.perfume{
+  background-image:url("/images/image-product-mobile.jpg") ;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px 10px 0 0;
+  background-repeat: no-repeat;
+}
+.principal h2{
+  font-family: 'Montserrat', serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: gray;
+}
+.principal h1{
+  font-family: 'Fraunces', serif;
+  text-transform:capitalize;
+  font-size: 30px;
+}
+.principal p{
+  font-family: 'Montserrat', serif;
+  font-size: 14px;
+  text-align:start;
+  color: gray;
+  line-height: 22px;
+}
+.descrição{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 8px;
+}
+.precos{
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.precos h1{
+  color: hsl(158, 36%, 37%);
+}
+.precos h2{
+  letter-spacing: 0;
+  text-decoration: line-through;
+}
+.carrinho{
+  background-color: hsl(158, 36%, 37%);
+  padding: 13px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  font-family: 'Montserrat', serif;
+  margin-bottom: 30px;
+}
+footer{
+  font-size: 10px;
+  text-decoration: none;
+  font-family: 'Montserrat', serif;
+  color: gray;
+}
+footer a{
+  color: black;
+}
+@media only screen and (min-width: 1444px){
+  .principal{
+    width: 50%;
+    flex-direction: row;
+    height: 60vh;
+  }
+  .perfume{
+    width: 70%;
+    height: 470px;
+    background-image: url("/images/image-product-desktop.jpg");
+    background-position: center;
+    margin-top: 88px;
+    border-radius: 10px 0 0 10px ;
+  }
+  .descrição{
+    width: 50%;
+    gap: 20px;
+  }
+}
